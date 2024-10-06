@@ -1,0 +1,20 @@
+<header>
+    <div class="logo">
+        <a href="{{ shop.url }}">
+            <img src="{{ 'logo.png' | asset_url }}" alt="Store Logo">
+        </a>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/collections/all">Shop</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="cart">
+        <a href="/cart">
+            <img src="{{ 'cart-icon.png' | asset_url }}" alt="Cart">
+            <span>{{ cart.item_count }}</span>
+        </a>
+    </div>
+</header>
